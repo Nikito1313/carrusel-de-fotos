@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrusel de Fotos - Te Amo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="carousel-container">
+        <div class="carousel">
+            <div class="carousel-item">
+                <div class="image-container">
+                    <img src="5.jpeg" alt="Imagen 1">
+                </div>
+                <div class="description">
+                    <p>En ese día me di cuenta de que quería que fueras mi novia de nuevo. Tenía miedo a las críticas de los demás porque siempre era lo mismo: los juicios y las opiniones ajenas. Sin embargo, al final comprendí que esto es cosa de dos, y que no debemos dejar que los de afuera nos afecten. Nuestra relación es única y especial, y lo que importa es lo que sentimos el uno por el otro. Te amo y estoy dispuesto a enfrentar cualquier desafío contigo, porque juntos somos más fuertes y nuestra felicidad es lo único que realmente importa.</p>
+                </div>
+                <button class="show-description" onclick="toggleDescription(this)">❤ Ver Descripción</button>
+            </div>
+            <div class="carousel-item">
+                <div class="image-container">
+                    <img src="13.jpeg" alt="Imagen 2">
+                </div>
+                <div class="description">
+                    <p>Estábamos pasando por muchas etapas bonitas en nuestra relación. Cada día, tengo más ganas de vivir todas las emociones más bonitas que existen contigo. Desde las risas compartidas hasta los silencios confortables, cada momento contigo es un regalo. Tu amor y tu compañía hacen que mi corazón se llene de felicidad y entusiasmo.
+
+                        Quiero seguir explorando este camino a tu lado, enfrentando juntos los desafíos y celebrando cada pequeña victoria.</p>
+                </div>
+                <button class="show-description" onclick="toggleDescription(this)">❤ Ver Descripción</button>
+            </div>
+            <div class="carousel-item">
+                <div class="image-container">
+                    <img src="15.jpeg" alt="Imagen 3">
+                </div>
+                <div class="description">
+                    <p>Tu sonrisa y tus locuras llenan mi día de luz y alegría. Cada vez que te veo sonreír, mi corazón se llena de felicidad y todo parece mejor. Tus ocurrencias y tu forma única de ver el mundo me inspiran a disfrutar cada momento y a encontrar la alegría en las pequeñas cosas.Agradezco cada instante que paso a tu lado y no puedo esperar a ver todas las maravillas que nos depara el futuro juntos. Te amo más de lo que las palabras pueden expresar.</p>
+                </div>
+                <button class="show-description" onclick="toggleDescription(this)">❤ Ver Descripción</button>
+            </div>
+            <!-- Añade más imágenes y descripciones según sea necesario -->
+        </div>
+        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="next" onclick="moveSlide(1)">&#10095;</button>
+    </div>
+    <div class="interaction">
+        <button onclick="showMessage()">Toca aquí</button>
+        <p id="message" style="display: none;">Te amo, suerte en todo. "La vida es mejor contigo a mi lado."</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
