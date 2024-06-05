@@ -21,7 +21,7 @@ function toggleDescription(button) {
     const item = button.parentElement;
     const description = item.querySelector('.description');
     
-    if (description.style.display === 'none') {
+    if (description.style.display === 'none' || !description.style.display) {
         description.style.display = 'block';
     } else {
         description.style.display = 'none';
